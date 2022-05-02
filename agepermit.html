@@ -7,17 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-<script>   
-    function PG13() {
-    var accompanied, notaccompanied, Age;
-        accompanied = true;
-        notaccompanied = true;
+<script>
+        var Accompanied = prompt('please are you aacompanied')
+        var Age = parseInt(prompt('please enter your Age')) 
+        var Accompanied, Age, Agereturn;
+        Accompanied = true;
         Age = 13;
-    if (Age < 13 && notaccompanied){
-    console.log("Hello you are too young to watch this movie");
+        Agereturn;
+    function PG13(Accompanied, Age) {
+    if (Age >= 13){
+    Agereturn = `Hello you are welcome`
     }
-    else console.log("Hello you are welcome")}
-    PG13();    
+    else if(Age <= 13 || accompanied == true){
+        Agereturn = `Hello you welcome because you are accompanied`
+    }
+    else {
+        Agereturn = `You are not allowed`
+    }
+    alert(Agereturn) }
+    PG13(Accompanied, Age)
+   
 </script>
 
 </body>
